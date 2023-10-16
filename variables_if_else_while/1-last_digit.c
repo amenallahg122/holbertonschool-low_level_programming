@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - Prints if last digit of number = 0, <5 or >6 and =!0
  *
@@ -8,6 +9,7 @@
 int main(void)
 {
 	int n;
+	int x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
