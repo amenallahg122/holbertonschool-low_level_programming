@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * isalpha -  prints _putchar, followed by a new line
+ * _isalpha -  prints if alpha, followed by a new line
  * Return: Always 0 (Success)
  * @c : integer
  */
