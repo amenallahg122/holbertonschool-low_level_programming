@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - prints _putchar
  * Return: Always (Success)
  */
 int main(void)
 {
-putchar("_putchar\n");
-return (0);
+	printf("_putchar\n");
+	return (0);
 }
