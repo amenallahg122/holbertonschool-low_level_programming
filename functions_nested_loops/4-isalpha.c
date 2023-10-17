@@ -6,7 +6,7 @@
  * @c : integer
  */
 
-int _islower(int c)
+int isalpha(int c)
 {
 
 	if (122 >= c >= 65)
