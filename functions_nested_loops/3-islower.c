@@ -8,7 +8,6 @@
 
 int _islower(int c)
 {
-	char c;
 
 	if (c >= 97)
 	{
@@ -16,3 +15,4 @@ int _islower(int c)
 	}
 	else
 		return (0);
+}
