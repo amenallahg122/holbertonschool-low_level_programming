@@ -9,7 +9,7 @@
 int isalpha(int c)
 {
 
-	if (122 >= c >= 65)
+	if (c >= 65)  && (c <= 122)
 	{
 		return (1);
 	}
