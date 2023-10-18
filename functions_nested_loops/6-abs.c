@@ -7,6 +7,7 @@
  */
 
 int _abs(int n)
+int m
 {
 	if (n >= 0)
 	{
@@ -14,7 +15,7 @@ int _abs(int n)
 	}
 	else
 	{
-		m = (n * -1)
+		m = (n * -1);
 		return (m);
 	}
 }
