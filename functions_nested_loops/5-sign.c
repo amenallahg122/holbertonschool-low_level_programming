@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _print_sign -  prints sign of number
+ * print_sign -  prints sign of number
  * Return: Always (Success)
  */
 
-int _print_sign(int n)
+int print_sign(int n)
 {
 	if (0 > n)
 	{
