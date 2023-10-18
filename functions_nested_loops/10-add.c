@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * add - adds two integers together
- * A:integer
- * B:integer
+ * A: integer
+ * B: integer
  * sum: integer
  * Return: result of the addition
  */
-int A, B;
+
 int add(int A, int B)
 {
 	int sum = 0;
