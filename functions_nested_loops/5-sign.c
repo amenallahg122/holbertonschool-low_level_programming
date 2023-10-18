@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign -  prints sign of number
+ * _print_sign -  prints sign of number
  * Return: Always (Success)
  */
 
