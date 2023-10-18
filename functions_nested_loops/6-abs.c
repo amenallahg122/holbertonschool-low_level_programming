@@ -6,8 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-int _abs(int n) int m;
-m = (n * -1)
+int _abs(int n);
 {
 	if (n >= 0)
 	{
@@ -15,6 +14,7 @@ m = (n * -1)
 	}
 	else
 	{
+		m = (n * -1)
 		return (m);
 	}
 }
