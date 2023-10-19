@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * more_numbers -  prints from 0to 14, ten times
  * Return: Always  (Success)
