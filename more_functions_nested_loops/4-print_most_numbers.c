@@ -5,6 +5,7 @@
  *
  * Return: Always (Success)
  */
+
 void print_most_numbers(void)
 {
 	char a;
