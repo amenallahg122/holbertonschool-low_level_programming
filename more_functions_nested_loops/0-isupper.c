@@ -8,12 +8,8 @@
 
 int _isupper(int c)
 {
-	if (isupper(c))
-	{
-		return (1)
-	}
+	if (c >= 97 && c <= 122)
+		return (0);
 	else
-	{
-		return (0)
-	}
+		return (1);
 }
