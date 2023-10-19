@@ -1,19 +1,19 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * print_numbers -  prints numbers from 0 to 9
- * Return: Always  (Success)
+ * main - Prints the alphabet except e and q
+ *
+ * Return: Always (Success)
  */
 
-void print_numbers(void)
-{
+void print_most_numbers(void)
 	char a;
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = '0'; a <= '9' ; al++)
+		if (a != '2' && a != '4')
 	{
-		putchar(a);
+			putchar(a);
 	}
-
 	putchar('\n');
+	return (0);
 }
