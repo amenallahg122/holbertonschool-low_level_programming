@@ -18,6 +18,6 @@ void puts_half(char *str)
 	else
 		for (i = 0; i <= n; i++)
 		{
-			_putchar(str[i])
+			_putchar(str[i]);
 		}
 }
