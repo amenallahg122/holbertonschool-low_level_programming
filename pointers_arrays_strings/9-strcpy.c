@@ -1,6 +1,6 @@
 
 /**
- * _strcpy - 
+ * _strcpy - copies
  * @dest: destination
  * @src: source
  * Return: 
