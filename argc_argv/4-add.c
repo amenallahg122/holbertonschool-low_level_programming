@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *checknumbers - check for numbers
- * @argc : size of the array
- * @argv : elements of the array
+ *isnumber - check if number
+ * @argc : int
+ * @argv : str
  * Return: 0 or 1
  */
-int checknumbers(int argc, char **argv)
+int isnumber(int argc, char **argv)
 {
 	int a;
 	int b;
@@ -27,8 +27,8 @@ int checknumbers(int argc, char **argv)
 }
 /**
  * main - Entry point
- * @argc : size of the array
- * @argv : elements of the array
+ * @argc : int
+ * @argv : str
  * Return: 0 or 1
  */
 int main(int argc, char **argv)
@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	int i;
 	int sum = 0;
 
-	if (checknumbers(argc, argv) == 0)
+	if (ifnumber(argc, argv) == 0)
 	{
 		printf("Error\n");
 		return (1);
