@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	int i;
 	int sum = 0;
 
-	if (ifnumber(argc, argv) == 0)
+	if (isnumber(argc, argv) == 0)
 	{
 		printf("Error\n");
 		return (1);
