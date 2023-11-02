@@ -1,29 +1,53 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - adds two numbers
- *
- * @argc: int
- * @argv: string
- *
+ *checknumbers - check for numbers
+ * @argc : size of the array
+ * @argv : elements of the array
  * Return: 0 or 1
  */
+int checknumbers(int argc, char **argv)
+{
+	int a;
+	int b;
 
+	for (a = 1; a < argc; a++)
+	{
+		b = 0;
+		while (argv[a][b] != '\0')
+		{
+			if ((argv[a][b] < 47) || (argv[a][b] > 58))
+			{
+				return (0);
+			}
+			b++;
+		}
+	}
+	return (1);
+}
+/**
+ * main - Entry point
+ * @argc : size of the array
+ * @argv : elements of the array
+ * Return: 0 or 1
+ */
 int main(int argc, char **argv)
 {
-	int a, b, diff;
+	int i;
+	int sum = 0;
 
-	if ((a >= 48 && a <= 57)&&(b >= 48 && b <= 57))
+	if (checknumbers(argc, argv) == 0)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-	diff = a + b;
-
-	printf("%i\n", diff);
-
-	return (0);
+	else
+	{
+		for (i = 1; i < argc; i++)
+		{
+			sum = sum + atoi(argv[i]);
+		}
+		printf("%d\n", sum);
+		return (0);
+	}
 }
