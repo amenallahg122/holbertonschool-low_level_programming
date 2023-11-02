@@ -7,8 +7,8 @@
 */
 int main(int argc, char **argv)
 {
-	(void)argc;
 	int i;
+	(void)argc;
 
 	i = 0;
 	while (i >= 0)
