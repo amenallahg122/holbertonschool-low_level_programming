@@ -1,38 +1,39 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * str_concat - concatenates two strings
  * @s1: string 1
  * @s2: string 2
- * Return: a string.
+ * Return: a string
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *ch;
 	unsigned int i, j;
-	unsigned int l1 = 0;
-	unsigned int l2 = 0;
+	unsigned int n = 0;
+	unsigned int m = 0;
 
 	if (s1 != NULL)
 	{
-		l1 = strlen(s1);
+		n = strlen(s1);
 	}
 	if (s2 != NULL)
 	{
-		l2 = strlen(s2);
+		m = strlen(s2);
 	}
-	ch = (char *)malloc((l1 + l2 + 1) * sizeof(char));
+	ch = (char *)malloc((n + m + 1) * sizeof(char));
 	if (ch == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < l1; i++)
+	for (i = 0; i < n; i++)
 		ch[i] = s1[i];
 
-	for (j = 0; j < l2; j++)
+	for (j = 0; j < m; j++)
 	{
 		ch[i] = s2[j];
+		i++;
 	}
 
 	ch[i] = '\0';
