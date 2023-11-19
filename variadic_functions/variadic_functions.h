@@ -1,5 +1,11 @@
 #ifndef VAR_FUNC
 #define VAR_FUNC
+typedef struct types
+{
+    char type;
+    void (*function)( va_list);
+} types_t;
+
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
