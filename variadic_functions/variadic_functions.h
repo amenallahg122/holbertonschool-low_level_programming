@@ -1,7 +1,9 @@
 #ifndef VAR_FUNC
 #define VAR_FUNC
+#include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdarg.h>
 typedef struct types
 {
     char type;
